@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+</head>
+<body>
+
+            <label for="number1">Enter First number</label>
+            <input type="number" id="n1" name="number1">  
+        
+            <label for="number2">Enter Second number</label> 
+            <input type="number" id="n2" name="number2">
+         <br>
+            <button onclick="add()"> Add</button>
+
+            <label for="ans">Sum of entered number is:</label> 
+            <input type="number" id="addition" name="ans">
+
+
+            <script>
+                
+                // console.log(num1.value,num2.value);
+                
+                function add(){
+                    var num1= document.getElementById("n1");
+                    // console.log(num1.value);
+                    var num2= document.getElementById("n2");
+                    // console.log(num2.value);
+                    var sum= Number(num1.value)+ Number(num2.value);
+                    // console.log(sum);
+                    var sm= document.getElementById("addition");
+                    // console.log(sm);
+                    sm.value=sum;
+                
+                }
+            </script>
+</body>
+</html>
+
+
+
+<!-- 
+Question- 1: By how many ways we can access elements in the DOM and write about them in brief?
+Amswer: following are the way through which we can fetch any eliment:
+ 1. by id
+ 2. by classname
+ 3. by tagname
+
+ 1. by ID:
+ The easiest way to find an HTML element in the DOM, is by using the element id.
+ ex. <p id="para" class="para1">something</p>
+      <script>var myElement = document.getElementById("para");
+     </script>
+
+ 2. by classname:
+ getElementsByClassName() method is used to get any element using classname
+ex. <script>var myElement = document.getElementByClassName("para1");
+     </script>
+
+3. by tagname:
+getElementsByTagName("tag_name"") method will all the tags of same name.
+ex. <script>var myElement = document.getElementByTagName("p");
+     </script>
+ -->
+
+ 
